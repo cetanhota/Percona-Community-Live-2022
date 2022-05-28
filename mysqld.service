@@ -1,0 +1,15 @@
+[Unit]
+Description=Percona Server 8.0
+After=syslog.target
+After=network.target
+[Install]
+WantedBy=multi-user.target
+[Service]
+User=mysql
+Group=mysql
+ExecStart=/usr/local/mysql/bin/mysqld --defaults-file=/etc/my.cnf
+TimeoutSec=300
+WorkingDirectory=/usr/local/mysql
+Restart=on-failure
+#RestartPreventExitStatus=1
+PrivateTmp=true
