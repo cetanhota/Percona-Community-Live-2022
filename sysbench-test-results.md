@@ -1,13 +1,13 @@
+# Testing Details
 
-#Testing Details
+ - 4 threads
+ - 10 tables
+ - 250,000 table size
+ - 5 mins
 
-4 threads
-10 tables
-250,000 table size
-5 mins
+## Test One:
 
-##Test One
-**default my.cnf**
+***Simple my.cnf with no tweeks.***
 
 ```
 SQL statistics:
@@ -36,14 +36,19 @@ Threads fairness:
     events (avg/stddev):           1494.0000/10.46
     execution time (avg/stddev):   300.1646/0.04
 
-
 real	5m0.371s
 user	0m10.805s
 sys	    0m22.938s
 ```
-##Test Two
 
+## Test Two:
 
+***Following tweeks.***
+
+ - table_open_cache=500
+ - thread_cache_size=16
+```
+SQL statistics:
     queries performed:
         read:                            87850
         write:                           25075
@@ -72,4 +77,5 @@ Threads fairness:
 
 real	5m2.219s
 user	0m10.961s
-sys	0m24.595s
+sys	    0m24.595s
+```
