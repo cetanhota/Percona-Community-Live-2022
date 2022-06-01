@@ -16,3 +16,6 @@
 - Sysbench 1.0.20
 
 Link to the original [blog](https://percona.community/blog/2022/04/05/percona-server-raspberry-pi/) post.
+
+Build time for Percona Server is approx 7 hours and 20 mins.
+Build time for XtraBackup is approx 2 hours and 30 mins.
