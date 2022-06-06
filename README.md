@@ -4,7 +4,7 @@
 
 ## Hardware
 
-- Raspberry Pi 4 8GB RAM.
+- Raspberry Pi 4 8GB RAM. (You can use a Raspberry 3B+ builds will be slower.)
 - Sandisk 128GB Extreme microSDXC.
 - Kexin 500GB External Solid State Drive.
 
